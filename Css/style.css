@@ -14,7 +14,7 @@
     --PrimaryColor: #325cf4;
     --SectionBackgroundColor: #f2f5ff;
 
-
+    --borderRadius: 10px;
     --Headline: 64px;
     --SubHeadline: 48px;
     --normalP: 20px;
@@ -29,6 +29,16 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Product Sans';
+    font-weight: 700;
 }
 
 button {
@@ -49,6 +59,7 @@ a {
 
 .container-fluid {
     width: 95%;
+    margin: 0 auto;
 }
 
 .container {
@@ -65,6 +76,29 @@ a {
     display: flex;
     flex-wrap: wrap;
 }
+
+.section-title {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title h3 {
+    font-size: var(--SubHeadline);
+}
+
+.section-title small {
+    font-size: var(--SmallP);
+    letter-spacing: 1.6px;
+    color: var(--PrimaryColor);
+}
+
+.section-title p {
+    font-size: var(--normalP);
+    line-height: 32px;
+}
+
+
 
 .navigation-bar {
     width: 1285px;
@@ -155,4 +189,70 @@ a {
     position: relative;
     left: 0;
     bottom: 0;
+}
+
+
+
+
+
+.why-choose-us {
+    padding: 75px 0;
+}
+
+.why-choose-us .chooseUs-content-box {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 95px;
+}
+
+.why-choose-us .content {
+    width: 23.5%;
+}
+
+.why-choose-us .content .icon {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* object-fit: contain; */
+    background-color: var(--PrimaryColor);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.why-choose-us .content p {
+    font-size: var(--normalP);
+    text-align: center;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+
+
+.join-waitinglist-today {
+    width: 1499.072px;
+    height: 489px;
+    margin: 0 auto;
+    position: relative;
+    /* background-color: var(--SectionBackgroundColor);  */
+    background-image: url('../img/Msking.png');
+    background-position:center right;
+}
+
+.join-waitinglist-today::after {
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    /* background-image: url('../img/Msking.png');
+    background-repeat: no-repeat;
+    background-size: cover;  */
 }
